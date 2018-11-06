@@ -1,0 +1,22 @@
+---
+title: "Penguin Anova"
+author: "Fernanda Montero"
+date: "11/6/2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+1. Load packages and read-in penguins.csv data
+```{r, include = FALSE}
+library(tidyverse)
+library(dplyr)
+library(car)
+library(onewaytests)
+
+penguins <- read_csv("penguins.csv")
+
+```
+
